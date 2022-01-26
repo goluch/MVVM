@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid x:Name="ViewFilesStackPanel" HorizontalAlignment="Left" Width="100">
+            <ListBox d:ItemsSource="{d:SampleData ItemCount=5}" VerticalAlignment="Stretch"/>
+            <Button Content="Clear" VerticalAlignment="Bottom" HorizontalAlignment="Stretch"/>
+        </Grid>
     </Grid>
 </Window>
